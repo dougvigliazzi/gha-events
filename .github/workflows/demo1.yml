@@ -4,6 +4,7 @@ on:
     types: [opened, synchronize, reopened]
   push:
     branches: [main, dev]
+    paths-ignore: '.github/workflows/*'
   workflow_dispatch:
 jobs:
   deploy:
